@@ -1,0 +1,37 @@
+Parser:
+
+Add Constants,{unarys, other binexpressions}[x]
+
+
+Add Types, eg Pointer, Reference, List, Dict[x]
+Add If, Elif, Else Statement[x] -- add break
+
+--Finish everything above this tommorrow--
+
+Add Tenray[x]
+Add While And For Loops and match[x] -- add continue
+
+
+Add Functions, With Templates Too![x]
+Add Identifier[x]
+
+Add Mods[x]
+Add imports[x]
+
+
+Add Enums[x],
+Add Structs, WIth Templates[x]
+Add New, Delete[x]
+Add Unions[x]
+
+
+Inhertiance:
+    Add Impl, And Possibly interfaces or Structs[x]
+
+Add Externs[x]
+Add Macros[x]
+
+Unimportant:
+    This is for stuff not needed so they can be added in the future(I mean like self-hosting or futher)
+    lambas
+    
