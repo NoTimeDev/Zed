@@ -1,0 +1,31 @@
+import "string"
+
+mod std{
+	struct outstream{
+		Buf: str = "";
+		
+		func init(self: Self){}
+
+		func print(self: Self){
+			extern "cdecl" printfn(String) 
+		}
+
+		func flush(self: Self){
+			self.print(Buf);
+			Buf = "";
+        }
+
+		func __scope__(self: Self){
+			self.flush();
+		}
+		
+		func __shiftr__(self: Self, Somestr: String){
+			Buf+=Somestr;
+		}
+	}
+
+	let println: outstream = outstream();
+	let endl :=	println.flush();
+
+}
+
